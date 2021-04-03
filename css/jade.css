@@ -1,0 +1,106 @@
+body {
+  background-color: white;
+  margin-top: 120px;
+}
+
+header{
+margin: -7px; 
+/* issues making this stretch edge to edge.. for some reason -7 works */
+}
+
+nav{
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  margin-right: 80px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+   /* gives space left of items */
+  margin-left: 30px;
+  padding-top: 25px;
+}
+
+.nav-container{
+  top: 0px;
+  width: 100%;
+  position: fixed; /* works but takes away the header styling */
+  background-color:  whitesmoke;
+  box-shadow: 0px 10px 5px #27272780;
+  -webkit-box-shadow: 0px 5px 5px #27272780;
+  -moz-box-shadow: 0px 10px 5px #27272780;
+  z-index: 999999;
+}
+.nav-name {
+  padding: 10px 150px;
+  font-size: 40px;
+  text-decoration: none;
+  color: #864000;
+  float: left;
+}
+
+nav a{
+font-size: 18px;
+font-family: monospace;
+  font-weight: 700;
+  text-decoration: none;
+  color: #d44000;
+}
+
+nav a:hover {
+  color: chocolate;
+}
+
+/* section one */
+
+.section-1{
+  align-content: center;
+  width: 40%;
+  margin-left: 100px;
+  text-align: center;
+}
+.jade-photo {
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+}
+
+.icons{
+  margin-right: 30px;
+}
+.icons ul li {
+  list-style: none;
+  display: inline-block;
+  /* gives space left of items */
+  padding-right: 10px;
+  color: #d44000;
+
+}
+
+
+/* Footer height */
+
+footer {
+  position: relative;
+  bottom: 0; 
+  color: #d44000;
+  font-weight: 700;
+  width: 100%;  /**/
+  height: 2.5rem;            /* Footer height */
+}
+
+.copyright {
+  text-align: center;
+}
+
+p {
+  font-size: large;
+}
+
+
+/* https://colorhunt.co/palette/264477  */
+
