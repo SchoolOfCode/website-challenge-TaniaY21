@@ -40,7 +40,13 @@ header{
   position: fixed; /* tried it here too but it also messes up layout*/
 }
 ```
-I was unable to find a solution to this problem despite some serious Googling. From what I read, the `fixed` position takes the element "*out of flow*", but I don't know how to fix that. It also led me to the rabbit hole of CSS grid layouts, flexbox, Bootscrap and I got even more confused... I felt like it was overly complicated for something so simple T_T 
+I was unable to find a solution to this problem despite some serious Googling. From what I read, the `fixed` position takes the element "*out of flow*", but I don't know how to fix that. 
 
-I also had issues keeping the `footer` pinned to the very bottom.
+# Second week
+
+I changed the code since after we learned about flexbox I thought it would be easier to use that for my entire layout instead, and it really was! 
+
+But I still had issues since sometimes none of the modifiers (`justify-content` or `align-items` worked even though they were in flex containers...)
+
+ß
 

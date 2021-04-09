@@ -1,106 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
-  margin-top: 120px;
 }
 
-header{
-margin: -7px; 
-/* issues making this stretch edge to edge.. for some reason -7 works */
+hr {
+  border: none;
+  border-top: dotted 5px  #d44000;
+  width: 5%;
+  margin: auto;
+
 }
 
-nav{
-  float: right;
+h2 {
+	margin:10px 0;
+	}
+
+nav {
+    display: flex;
+    justify-content: space-between;   
+    text-align: center;
+    background-color:  whitesmoke;
+    box-shadow: 0px 10px 5px #27272780;
+    -webkit-box-shadow: 0px 5px 5px #27272780;
+    -moz-box-shadow: 0px 10px 5px #27272780;
+    z-index: 999999;
+
+    /* position: fixed; doesn't work  */
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+
+  nav a {
+    font-family: monospace;
+    font-weight: 700;
+    text-decoration: none;
+    color: #d44000;
+  }
+
+  nav a:hover {
+    color:#864000;
+  }
+
+.navbar-brand-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 40px;
+  }
+
+.navbar-name {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 50px;
+    color: #864000;
+  }
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul {
-  margin: 0;
-  margin-right: 80px;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-   /* gives space left of items */
-  margin-left: 30px;
-  padding-top: 25px;
-}
-
-.nav-container{
-  top: 0px;
-  width: 100%;
-  position: fixed; /* works but takes away the header styling */
-  background-color:  whitesmoke;
-  box-shadow: 0px 10px 5px #27272780;
-  -webkit-box-shadow: 0px 5px 5px #27272780;
-  -moz-box-shadow: 0px 10px 5px #27272780;
-  z-index: 999999;
-}
-.nav-name {
-  padding: 10px 150px;
-  font-size: 40px;
-  text-decoration: none;
-  color: #864000;
-  float: left;
-}
-
-nav a{
+.navbar-item{
+list-style: none;
+margin-right: 3rem;
 font-size: 18px;
-font-family: monospace;
-  font-weight: 700;
-  text-decoration: none;
-  color: #d44000;
 }
 
-nav a:hover {
-  color: chocolate;
+/* section one section one section one section one section one section one */
+
+.section-one-flex-container {
+  border: 5px solid black;
+  display: flex;
+  margin: 50px 15px 0 60px;
+/* wanted to use justify-content can't create gap between columns */
 }
 
-/* section one */
-
-.section-1{
-  align-content: center;
-  width: 40%;
-  margin-left: 100px;
+.column1-div {
+  border: 2px solid blue;
+  flex: 1;
   text-align: center;
+  /* align-content: space-between; wanted to use this to create space between the rows (i.e header, paragraph, icons
+  but doesnt work/render */
 }
+
+.column2-div {
+  border: 2px solid red;
+  flex: 2;
+}
+
+.icon-list {
+  border: black 1px solid;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0 80px; /* to squish them together more after using space-around*/
+  margin-top: 20px; /* used this instead of align-content: space-between; 
+  since it didn't work*/
+  } 
+  
+.icon-item {
+  color: #d44000;
+  font-size: 30px;
+  }
+
+  .icon-item a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+  }
+
+  .icon-item a:hover {
+    color: purple;
+    content:attr(title);
+
+  }
+
 .jade-photo {
   border-radius: 300px;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 }
 
-.icons{
-  margin-right: 30px;
-}
-.icons ul li {
-  list-style: none;
-  display: inline-block;
-  /* gives space left of items */
-  padding-right: 10px;
-  color: #d44000;
-
+/* section two */ /* section two */ /* section two */ /* section two */ /* section two */
+.section-two-flex-container {
+  display: flex;
+  margin: 50px;
+  margin-left: 60px; 
+  margin-right: 15px; 
 }
 
+.column3-div {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+  /* align-content: space-between; wanted to use this to create space between the rows (i.e header, paragraph, icons
+  but doesnt work/render */
+}
 
-/* Footer height */
+.column4-div {
+  padding: 10px;
+  flex: 1;
+}
+
+.column4-div ul {
+  list-style:inside;
+}
+.study-img {
+width: 550px;
+height: 350px;
+border-radius: 90px;
+padding: 20px;
+
+}
+
+.coding-flex-container {
+  display: flex;
+  justify-content: center;
+}
+.coding-img {
+  width: 550px;
+  height: 310px;
+  padding: 20px;
+  border-radius: 90px;
+}
+
+.column5-div {
+  padding: 10px;
+  flex: 1;
+}
+
+/* Footer */ /* Footer */ /* Footer */
 
 footer {
   position: relative;
+  margin: 10px;
   bottom: 0; 
   color: #d44000;
-  font-weight: 700;
-  width: 100%;  /**/
-  height: 2.5rem;            /* Footer height */
+  width: 100%; 
+  height: 1rem;        
 }
 
 .copyright {
   text-align: center;
+  font-size: small;
 }
 
 p {
   font-size: large;
+  margin-bottom: 10px;
 }
 
 
+@media screen and (max-width: 850px) {
+  .section-one-flex-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  /* doesnt work */
+    /* align-content: center;
+    justify-content: center;  */
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .column2-div {
+    margin-top: 20px;
+
+  }
+
+  .icon-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px; 
+}
+
+.icon-item {
+  padding: 10px;
+}
+
+.section-two-flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
+
+}
+
 /* https://colorhunt.co/palette/264477  */
+
+
 
