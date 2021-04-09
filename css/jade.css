@@ -36,8 +36,6 @@ nav {
     text-decoration: none;
   }
 
-
-
   nav a {
     font-family: monospace;
     font-weight: 700;
@@ -77,35 +75,29 @@ font-size: 18px;
 }
 
 /* section one section one section one section one section one section one */
-
 .section-one-flex-container {
-  border: 5px solid black;
   display: flex;
-  margin: 50px 15px 0 60px;
-/* wanted to use justify-content can't create gap between columns */
+  margin: 50px 15px 20px 60px;
 }
 
+
 .column1-div {
-  border: 2px solid blue;
-  flex: 1;
+  flex: 1;  /* just for behaviour!!!! */
   text-align: center;
-  /* align-content: space-between; wanted to use this to create space between the rows (i.e header, paragraph, icons
-  but doesnt work/render */
 }
 
 .column2-div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex: 2;
 }
 
 .icon-list {
-  border: black 1px solid;
+  /* border: black 1px solid; */
   display: flex;
   justify-content: space-around;
   list-style: none;
   padding: 0 80px; /* to squish them together more after using space-around*/
-  margin-top: 20px; /* used this instead of align-content: space-between; 
-  since it didn't work*/
+  margin-top: 20px; 
   } 
   
 .icon-item {
@@ -132,19 +124,17 @@ font-size: 18px;
 }
 
 /* section two */ /* section two */ /* section two */ /* section two */ /* section two */
+
 .section-two-flex-container {
+  border: 5px solid pink;
   display: flex;
-  margin: 50px;
-  margin-left: 60px; 
-  margin-right: 15px; 
+  margin: 50px 15px 20px 60px;
 }
 
 .column3-div {
   flex: 1;
   text-align: left;
   padding: 10px;
-  /* align-content: space-between; wanted to use this to create space between the rows (i.e header, paragraph, icons
-  but doesnt work/render */
 }
 
 .column4-div {
@@ -205,39 +195,20 @@ p {
   .section-one-flex-container{
     display: flex;
     flex-direction: column;
-    /* align-items: center;  /* doesnt work */
-    /* align-content: center;
-    justify-content: center;  */
-    margin-left: 10px; 
-    margin-right: 10px; 
+    align-items: center; 
   }
 
-  .column2-div {
-    margin-top: 20px;
-
-  }
-
-  .icon-list {
+  .section-two-flex-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    list-style: none;
-    margin-top: 10px; 
-}
-
-.icon-item {
-  padding: 10px;
-}
-
-.section-two-flex-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10px; 
-  margin-right: 10px; 
+    justify-content: center;
+ 
+  } 
+ 
 }
 
 
-}
 
 /* https://colorhunt.co/palette/264477  */
 
