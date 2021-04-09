@@ -52,3 +52,4 @@ I still had issues with `position: fixed;` for my navbar since it doesn't work w
 I  had other issues  with flexbox but I had a meeting with Max and she helped me so much, so lovely and supportive!!! Thank you <3 
 
 
+
