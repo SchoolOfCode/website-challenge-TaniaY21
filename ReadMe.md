@@ -4,6 +4,10 @@
 ### gives heading 3 etc -->
 
 # Jade's Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/891e650f-8f94-42fd-863d-191c6c79bc4f/deploy-status)](https://app.netlify.com/sites/jadephipps/deploys)
+
+
 We used [this page](https://manparvesh.com/ "web template") for layout inspiration, and I asked Jade to pick out a colour pallete she likes via Color Hunt. She picked [this pallete](https://colorhunt.co/palette/264477 "Color Hunt pallete").
 
 # Issues
