@@ -61,7 +61,6 @@ nav {
     font-size: 50px;
     color: #864000;
   }
-
 .navbar-list {
   display: flex;
   justify-content: center;
@@ -80,14 +79,12 @@ font-size: 18px;
   margin: 50px 15px 20px 60px;
 }
 
-
 .column1-div {
   flex: 1;  /* just for behaviour!!!! */
   text-align: center;
 }
 
 .column2-div {
-  /* border: 2px solid red; */
   flex: 2;
 }
 
